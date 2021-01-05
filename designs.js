@@ -15,7 +15,7 @@ function makeGrid() {
     let txt ='';
     for(var i=0; i<h; i++)
     {
-        txt += "<tr>"
+        txt += "<tr class='canvasCell'>"
         for(var j=0; j<w;j++)
             txt += "<td class='canvasCell' style='background-color: #ffffff;'>  </td>";
         
@@ -29,9 +29,9 @@ function makeGrid() {
 }
 
 function clearGrid(){
-        document.querySelectorAll('.canvasCell').forEach(function(t){
-            t.remove();
-        });
+    document.querySelectorAll('.canvasCell').forEach(function(t){
+        t.remove();
+    });
 }
 
 function paint()
